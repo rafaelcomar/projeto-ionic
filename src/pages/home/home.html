@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Adicionar Tarefa ({{tarefas.length}})</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Adicionar tarefa/h3>
+
+ <ion-textarea placeholder="Entre com a descrição" rows="5"
+  [{ngModel}] = "descricaoTarefa">
+
+ </ion-textarea>
+
+  <button ion-button block (click)="salvarTarefa()">Salvar Tarefa</button>
+</ion-content>
